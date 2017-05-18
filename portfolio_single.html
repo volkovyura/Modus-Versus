@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>portfolio_4</title>
+		<title>Portfolio_single</title> 
 
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.css" rel="stylesheet">
@@ -30,16 +30,16 @@
 							<span class="sr-only">Toggle navigation</span>
 							<span class="glyphicon glyphicon-align-justify"></span>
 						</button>
-						<a href="#" class="logo" title="logo">MODUS<span>versus</span></a>
+						<a href="index.html" class="logo" title="logo">MODUS<span>versus</span></a>
 					</div>
 					<div class="top_header_navigation collapse navbar-collapse" id="responsive-menu">
 						<ul class="nav navbar-nav">
-							<li><a href="index.html" title="">HOME</a></li>
-							<li><a href="about.html" title="">ABOUT</a></li>
+							<li class="active"><a href="index.html" title="">HOME</a></li>
+							<li class="about_list"><a href="about.html" title="">ABOUT</a></li>
 							<li><a href="services.html" title="">SERVICES</a></li>
-							<li class="dropdown active dropdown_list">
+							<li class="dropdown dropdown_list">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="portfolio.html" title="">PORTFOLIO<span class="glyphicon glyphicon-menu-down portfolio_icon_down"></span></a>
-								<ul class="dropdown-menu">
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 									<li><a href="#">Portfolio 2 column page</a></li>
 									<li><a href="#">Portfolio 2 column page</a></li>
 									<li><a href="#">Portfolio 2 column page</a></li>
@@ -62,27 +62,90 @@
 				<div class="container">
 					<h5 class="pull-left">PORTFOLIO</h5>
 					<ol class="breadcrumb pull-right">
-						<li><a href="#">Home</a></li>
-						<li class="active">Portfolio</li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="portfolio.html">portfolio</a></li>
+						<li class="active">WORDPRESS</li>
 					</ol>
 				</div>
 			</div>
 		</header>
 		<div class="main_content">
-			<div class="container">
-				<nav class="bot_nav">
-					<ul>
-						<li><a href="#">ALL</a></li>
-						<li><a href="#">WEB DESIGN</a></li>
-						<li><a href="#">LOGO DESIGN</a></li>
-						<li><a href="#">PHOTOGRAPHY</a></li>
-						<li><a class="active" href="#">WORDPRESS</a></li>
-					</ul>
-				</nav>	
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
+			<div class="container portfolio_single">
+				<script type="text/javascript">
+				jQuery(window).load(function() {
+					jQuery('.carousel').carousel({
+						interval: 0
+					})
+				});	
+				</script>
+				<div id="slide-show-8" class="carousel carousel_single slide">
+					<div class="carousel-inner">
+						<div class="item">
+							<h4>Donec faucibus ultricies congue</h4>
+						</div>
+						<div class="item active">
+							<h4>Donec faucibus ultricies congue</h4>
+						</div>
+						<div class="item">
+							<h4>Donec faucibus ultricies congue</h4>
+						</div>
+					</div>
+					<a class="left carousel_social_left" href="#slide-show-8" data-slide="prev"></a>
+					<a class="right carousel_social_right" href="#slide-show-8" data-slide="next"></a>
+				</div>
+				<div id="slide-show-9" class="carousel carousel_top slide">
+					<ol class="carousel-indicators">
+						<li data-target="#slide-show-9" data-slide-to="0" class=""></li>
+						<li class="active" data-target="#slide-show-9" data-slide-to="1"></li>
+						<li class="" data-target="#slide-show-9" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item">
+							<img src="images/kitchen_adventurer_lemon.jpg" alt="First slide">
+						</div>
+						<div class="item active">
+							<img src="images/kitchen_adventurer_lemon.jpg" alt="Second slide">
+						</div>
+						<div class="item">
+							<img src="images/kitchen_adventurer_lemon.jpg" alt="Third slide">
+						</div>
+					</div>
+					<a class="left carousel-control" href="#slide-show-9" data-slide="prev">
+						<span class="left-icon">
+							<i class="fa fa-angle-double-left"></i>
+						</span>
+					</a>
+					<a class="right carousel-control" href="#slide-show-9" data-slide="next">
+						<span class="right-icon">
+							<i class="fa fa-angle-double-right"></i>
+						</span>
+					</a>
+				</div>
+				<div class="clearfix"></div>
+				<div class="portfolio_single_content">
+					<div class="row">
+						<div class="col-md-8">
+							<h6>PROJECT DESCRIPTION</h6>
+							<p>Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. </p>
+							<p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div class="col-md-3 col-md-offset-1">
+							<h6>PROJECT DETAILS</h6>
+							<ul class="progect_details">
+								<li><span><i class="fa fa-calendar" aria-hidden="true"></i>Release date</span><span class="right_det">26 May 2013</span></a></li>
+								<li><span><i class="fa fa-cogs" aria-hidden="true"></i>Technologies</span><span class="right_det">HTML/CSS<br> <span>WORDRPESS</span></span></a></li>
+								<li><span><i class="fa fa-user" aria-hidden="true"></i>Client</span><span class="right_det">MightyDeals.</span></li>
+								<li><span><i class="fa fa-link" aria-hidden="true"></i>Project url</span><a href=""  class="right_det">VIEW PROJECT</a></li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+				<div class="clearfix"></div>
+				<div class="title_with_line">
+					<h6 class="title_line">RELATED PROJECTS</h6>
+				</div>
+				<div class="owl-carousel owl-theme">
+					<div class="item">
 						<div class="portfolio_1">
 							<figure>
 								<img src="images/person_foto.png" alt="">
@@ -98,7 +161,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="item">
 						<div class="portfolio_1">
 							<figure>
 								<img src="images/person_foto.png" alt="">
@@ -114,7 +177,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="item">
 						<div class="portfolio_1">
 							<figure>
 								<img src="images/person_foto.png" alt="">
@@ -130,199 +193,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="portfolio_1">
-							<figure>
-								<img src="images/person_foto.png" alt="">
-							</figure>
-							<div class="post_service_inner">
-								<div class="service_inner_nav">
-									<ul>
-										<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-									</ul>
-									<h6>Lorem ipsum</h6>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
+					<div class="item">
 						<div class="portfolio_1">
 							<figure>
 								<img src="images/person_foto.png" alt="">
@@ -339,25 +210,30 @@
 						</div>
 					</div>
 				</div>
+				<script>
+				jQuery(window).load(function() {
+				jQuery('.owl-carousel').owlCarousel({
+						loop:true,
+						margin:30,
+						nav:true,
+						dots: false,
+						navText: [ '', '' ],
+						responsive:{
+							0:{
+								items:1
+							},
+							768:{
+								items:4
+							},
+							1000:{
+								items:4
+							}
+							}
+						})
+					})
+				</script>
 			</div>
 			<div class="clearfix"></div>
-			<div class="container">
-				<div class="pagination_nav text-center">
-					<ul class="pagination">
-						<li><a href="#"><span class="left-icon"><i class="glyphicon glyphicon-chevron-left"></i></span></a></li>
-						<li><a href="#">1</a></li>
-						<li><a class="active" href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">...</a></li>
-						<li><a href="#">10</a></li>
-						<li><a href="#">11</a></li>
-						<li><a href="#">12</a></li>
-						<li><a href="#"><span class="left-icon"><i class="glyphicon glyphicon-chevron-right"></i></span></a></li>
-					</ul>
-				</div>
-			</div>
 			<div class="bottom_sidebar">
 				<div class="container">
 					<div class="row">
