@@ -1820,7 +1820,7 @@ h6 {
 }
 .portfolio_1 figure img {
   display: block;
-  max-height: 270px;
+  min-height: 270px;
   width: 100%;
 }
 .portfolio_1 .post_service_inner {
@@ -2709,4 +2709,23 @@ h6 {
 }
 .main_footer .footer_nav li a:hover:before {
   color: #497e79;
+}
+@media only screen and (max-width: 991px) {
+  .glyphicon-menu-down {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pagination li {
+    display: none;
+  }
+  .pagination li:first-child {
+    display: inline-block;
+  }
+  .pagination li:last-child {
+    display: inline-block;
+  }
+  .btn_view_details {
+    margin-bottom: 10px;
+  }
 }

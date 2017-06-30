@@ -1938,7 +1938,7 @@ h6 {
 	}
 	figure img {
 		display:block;
-		max-height:270px;
+		min-height:270px;
 		width:100%;
 	}
 	.post_service_inner {
@@ -2832,3 +2832,25 @@ h6 {
 	}	
 }
 
+@media only screen and (max-width: 991px) {
+	.glyphicon-menu-down {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.pagination li {
+		display:none;
+	}
+	.pagination li:first-child {
+		display:inline-block;
+	}
+	.pagination li:last-child {
+		display:inline-block;
+	}
+	
+	.btn_view_details {
+		margin-bottom:10px;
+	} 
+}
+	
